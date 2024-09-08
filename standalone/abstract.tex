@@ -1,0 +1,17 @@
+\chapter*{\hfill{\centering Abstract}\hfill}
+\vspace{1.5cm}
+
+% I probably shouldn't...
+%\renewcommand{\epigraphflush}{flushright}
+%\setlength{\epigraphwidth}{0.4\textwidth}
+%\myepigraph{Hold on to your butts \ldots}{John Raymond Arnold, \\\textit{Jurassic Park}}
+
+\begin{center}
+
+Current simulations of core-collapse supernovae mainly focus on the first moments of the explosion, up to a few seconds after collapse. Such simulations come at a large computational cost and rarely extend to later times, limiting our ability to compare with observations.
+
+By excising the central region where the proto-neutron star resides and replacing it with an inner boundary condition, it is possible to continue simulations until late times at a reduced computational cost. In this thesis, we have implemented a new inner boundary condition that mimics an isotropic neutrino-driven wind emerging from the surface of the proto-neutron star into the \flash\ code. We then mapped this boundary condition on the results of 1D and 2D simulations of core-collapse supernovae at \(\sim1\units{s}\) after bounce and continued these simulations until shock breakout. After testing the implementation, we analysed the impact of the boundary condition and its parametrisation on the simulations. Our results show that the wind velocity can significantly influence the evolution of the explosion energy as well as the hydrodynamics. However, the choice of wind velocity is complicated by the aspherical character of downflows and outflows at the inner boundary before mapping in the 2D simulations.
+
+We show that the approximation of a spherically symmetric neutrino-driven wind does not map well with the multidimensional behaviour of the material before mapping. In the 2D simulations, strong accretion channels can still be active at \(1\units{s}\), when we mapped our boundary condition, interfering with the wind and causing unwanted hydrodynamical behaviour. Mapping at a later time, when accretion slows down and the explosion energy saturates, should mostly eliminate this problem.
+
+\end{center}

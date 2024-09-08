@@ -1,0 +1,52 @@
+% Bibliography
+\usepackage{microtype}              % Improves character and word spacing
+\usepackage{natbib}					% Citations show up as Author Year, as in A&A or ApJ
+\bibpunct{(}{)}{;}{a}{}{,}	 			% Follow the A&A punctuation style
+\usepackage{bibliography/aas_macros}	% Use bibliography abbreviations from A&A class file
+
+% Language
+\usepackage[T1]{fontenc}				% Output font encoding, for printing accented and non-Ascii characters correctly
+\usepackage[utf8]{inputenc} 			% Input accented/non-Ascii characters directly from keyboard
+\usepackage[french, english]{babel}	    % Use English (default) and French languages
+
+% Layout
+%\linespread{1.3}						% Line spacing
+\usepackage{fancyhdr} 				% Fancy header and footer
+\usepackage{titlesec}				% Format titles
+\usepackage{titletoc}               % Format ToC
+\usepackage{enumitem}
+\usepackage{anyfontsize}            % Lets you set font size without restrictions
+\usepackage[indent=0pt]{parskip}    % It's a book, it's nicer if it breathes
+
+% Math	
+\usepackage{gensymb}				% Generic symbols, e.g. \degree
+\usepackage{textcomp}				% To also define \perthousand and \micro
+\usepackage{mathrsfs}
+\usepackage{amsmath}				% Math typesetting, equations etc.
+\usepackage{amssymb}				% Math symbols
+\usepackage{latexsym}
+\usepackage{framed}
+\usepackage{mathtools}
+
+% Referencing
+\usepackage[colorlinks=true,bookmarks=false,linkcolor=Plum,urlcolor=Plum,citecolor=Plum]{hyperref} % Hypertext in cross-references
+\usepackage{bookmark}               % Table of Content show in pdf reader
+\usepackage{url}					% Web links. Can also use \href
+\usepackage[noabbrev]{cleveref}				% Reference using e.g. 'fig.' or 'sec.', cross-reference. Load after amsmath!
+%\creflabelformat{figure}{[#2#1#3]}		% With cleveref, set square brackets around figure references
+%\newcommand{\refswed}[1]{Kapitel \ref{#1}} % For referencing a chapter in Swedish
+
+% Floats, figures
+\usepackage{float}
+\usepackage{graphicx}				% Introduces \includegraphics
+\usepackage[font={small}]{caption}  % This and next package used for floats, subfloats
+\usepackage{subcaption}
+\usepackage{threeparttable}         % Table notes
+
+% Misc
+\usepackage[usenames, dvipsnames]{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{subfiles}				% Use separate tex file for each chapter
+\usepackage{pdfpages} 				% Insert external pdf file
+
+\usepackage[normalem]{ulem} %for sout
